@@ -15,12 +15,26 @@ h3{
 button{
     background-image: "https://www.freelogodesign.org/file/app/client/thumb/46fc1273-cb93-4789-9998-b12aa9064b89_200x200.png?1608199107161";
 }
+#auto{
+  margin: auto;
+  width: 60%;
+  border:none;
+  /* padding: 10px; */
+  box-shadow: 10px 10px 5px grey;
+
+  margin-top: 100px;
+  
+  z-index: -1;
+  }
+  #buttonimage{border-radius: 50%;}
 #hide{
     margin-top:-50px;
     margin-left: 300px;
     text-align: left;
     -ms-transform: scaleY(1.5); 
-    transform: scaleY(1.5)
+    transform: scaleY(1.5);
+    /* z-index: -1; */
+    /* position: absolute; */
 }
 body{
     background-color: burlywood;
@@ -41,9 +55,25 @@ body{
     text-align: center;
     padding: 3px 20px;
     text-decoration: none;
-    
   }
-  
+  #category{
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 40px;
+ 
+   
+  }
+  #category:hover{   background-color: rgb(243, 161, 8);
+    color: rgb(212, 134, 16);}
+    #category.active{ background-color: #ee8a08;
+      color: white;}
   .topnav a:hover {
     background-color: rgb(243, 161, 8);
     color: rgb(212, 134, 16);
@@ -64,6 +94,10 @@ body{
       
       font-size: 60px;
       
+  }
+  .mySlides{
+    width: 500px;
+    height:500px;
   }
   header {
       margin-top: -70px;
@@ -106,7 +140,44 @@ body{
     font-family: 'Raleway', sans-serif;
   color: #000;		
   }
+
   #think {
       width: 300px;
       height: 300px;
+  }
+  #shop{
+    background-color: brown;
+    position:relative;
+    width: 300px;
+    height: auto;
+margin-left: 80%;
+  }
+  #iso{
+    font-size: 30px;
+    text-align: center;
+  
+  }
+  #al{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50  ;
+    background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  }
+  #al:hover{
+    background-color: #4CAF50;
+    color: white;
   }

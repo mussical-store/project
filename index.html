@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 <header>
 
 
@@ -23,7 +25,13 @@
              <div class="topnav" style="margin-top: 80px;"> 
                 <div class="nav">
                      <a class="active" href="#home" style=" margin-left:10%; ">Home</a>
-                     <a href="#news"style=" margin-left:10%; ">News</a>
+                     <select id="category">
+                      <option value="volvo">Piano</option>
+                      <option value="saab">Drum</option>
+                      <option value="vw">Guitare</option>
+                      <option value="Category" selected>Category</option>
+                    </select>
+                    <button id="bt" onclick="check()"style="cursor: pointer;"style="font-size:24px"> <i class="fa fa-shopping-cart"></i></button>
                      <a href="#contact"style=" margin-left:10%; ">Contact</a>
                      <a href="#about"style=" margin-left:10%; ">About</a>
                      <a href="#about"style=" margin-left:10%; "></a>
@@ -73,23 +81,26 @@
     </div>
   </div>   
     </div>
-    
-    <div class="w3-content w3-section" style="max-width:500px">
-      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXB834h2MGlA0tUw8ByQuUEMUDigGPFXozmw&usqp=CAU" style="width:100%">
-      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnjkYFTlptM-MyuR6cTbdS7t9JhueeObnKg&usqp=CAU" style="width:100%">
-      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPsIfeaZ4fx7UMvFWGSfGlnD4A-sWOwZ8g0g&usqp=CAU" style="width:100%">
-      <img class="mySlides" src="" style="width:100%">
-      <img class="mySlides" src="https://dwtz22labuy6b.cloudfront.net/pr-946f8535-c871-4e78-b8ef-03017049e82e.jpg" style="width:100%">
-      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEnulTDOPAjP6Cr4kZGDelm_7eITpT8mv-g&usqp=CAU" style="width:100%">
-      <img class="mySlides" src="https://st2.depositphotos.com/1047356/10844/i/950/depositphotos_108440078-stock-photo-promotion-text-piano-keys.jpg" style="width:100%">
-      <img class="mySlides" src="https://drummerszone.media/news/2014/12907-09282014175412.jpg" style="width:100%">
-      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiA3jOW9fltnLdtT1H9y75TTndm7n76Y-zg&usqp=CAU" style="width:100%">
-      <img class="mySlides" src="https://www.vandemoer.be/nl/media/catalog/product/cache/2/thumbnail/280x280/9df78eab33525d08d6e5fb8d27136e95/r/o/roland-td-17kvx-drum-set-17446.jpg" style="width:100%">
-      <img class="mySlides" src="https://thumbs.dreamstime.com/b/rock-music-poster-old-school-party-cartoon-vector-illustration-vintage-style-print-web-live-festival-concert-promotion-101700897.jpg" style="width:100%">
+    <div id="shop"></div>
+    <div id ='auto' class="nassir" style="max-width:500px">
+      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXB834h2MGlA0tUw8ByQuUEMUDigGPFXozmw&usqp=CAU" >
+      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnjkYFTlptM-MyuR6cTbdS7t9JhueeObnKg&usqp=CAU" >
+      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPsIfeaZ4fx7UMvFWGSfGlnD4A-sWOwZ8g0g&usqp=CAU" >
+     
+      <img class="mySlides" src="https://dwtz22labuy6b.cloudfront.net/pr-946f8535-c871-4e78-b8ef-03017049e82e.jpg" >
+      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEnulTDOPAjP6Cr4kZGDelm_7eITpT8mv-g&usqp=CAU" >
+      <img class="mySlides" src="https://st2.depositphotos.com/1047356/10844/i/950/depositphotos_108440078-stock-photo-promotion-text-piano-keys.jpg" >
+      <img class="mySlides" src="https://drummerszone.media/news/2014/12907-09282014175412.jpg" >
+      <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiA3jOW9fltnLdtT1H9y75TTndm7n76Y-zg&usqp=CAU" >
+      <img class="mySlides" src="https://www.vandemoer.be/nl/media/catalog/product/cache/2/thumbnail/280x280/9df78eab33525d08d6e5fb8d27136e95/r/o/roland-td-17kvx-drum-set-17446.jpg" >
+      <img class="mySlides" src="https://thumbs.dreamstime.com/b/rock-music-poster-old-school-party-cartoon-vector-illustration-vintage-style-print-web-live-festival-concert-promotion-101700897.jpg" >
 
     </div>
-     
-</div>
+             <div id="buttonimage">
+               <ul>
+                 
+               </ul>
+             </div>
 <script src="main.js"></script>
 </body>
 
