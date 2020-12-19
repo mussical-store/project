@@ -26,19 +26,18 @@ button{
   
   z-index: -1;
   }
-  #buttonimage{border-radius: 50%;}
+  #buttonimage{border-radius: 50%;
+  margin-left:800px;}
 #hide{
-    margin-top:-50px;
-    margin-left: 300px;
+    margin-top:-40px;
+    margin-left: 100px;
     text-align: left;
     -ms-transform: scaleY(1.5); 
     transform: scaleY(1.5);
     /* z-index: -1; */
     /* position: absolute; */
 }
-body{
-    background-color: burlywood;
-}
+
 
 .topnav {
     overflow: hidden;
@@ -145,39 +144,70 @@ body{
       width: 300px;
       height: 300px;
   }
-  #shop{
-    background-color: brown;
-    position:relative;
+   #shop{ 
+   
+     position:relative;
     width: 300px;
     height: auto;
-margin-left: 80%;
-  }
+margin-left: 80%; 
+  }  
   #iso{
     font-size: 30px;
     text-align: center;
   
   }
   #al{
-    background-color: #4CAF50; /* Green */
     border: none;
-    color: white;
-    
+    background-color: transparent;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-   
-    
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: white; 
     color: black; 
-    border: 2px solid #4CAF50  ;
-    background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
+   height: 50px;
   }
   #al:hover{
-    background-color: #4CAF50;
-    color: white;
+    background-color:#ccccccc7;
+    /* color: white; */
   }
+ #bt {  background-color:rgb(243, 161, 8) ; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 60px;
+
+ }
+ #bt:hover{
+
+ }
+li{
+  list-style-type: none;
+
+}
+ #add{
+  opacity: 0.5; 
+ }
+#add:hover{opacity: 1.0;}
+#carte{
+  float: left;
+  padding: 5px;
+  margin-left: 80px;
+  position:relative
+}
+* {
+  box-sizing: border-box;
+}
+h5{
+ font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+  margin-top: 0px;
+}

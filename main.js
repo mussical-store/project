@@ -1,14 +1,24 @@
 $("#hide").hide()
+$("#bebe").hide()
+$(".body2").hide()
 $("#logo").click(function(){
     $("#hide").toggle(3000)
     $("#hide").hide(5000)
+})
+$("#al").click(function(){
+ for (i=0;i<ins.length;i++){}
+})
+$("#contact").click(function(){
+ $(".body2").show()
+ $("#body").hide()
+ 
 })
     $("#shop").hide()
     $("#bt").click(function(){
       var instement = JSON.parse(localStorage.getItem('ins'))
       $("#shop").empty()
       for(var i = 0 ; i < instement.length ; i++){
-        $("#shop").append( '<li><button id="al"><h5 id="iso">' + instement[i] + '</h5></button></li>')
+        $("#shop").append( '<li class="items"><button id="al"><h5 id="iso">' + instement[i] + '</h5></button></li>')
        }
 
       $("#shop").toggle()
@@ -27,7 +37,7 @@ var instement = [{
 }]
 
          for(var i = 0 ; i < instement.length ; i++){
-          $("#buttonimage").append('<img style="cursor: pointer;"onclick="addtochariot(' + 'instement[' + i +'].name'+')" src=' + instement[i].src + ' width="100" height="100">' + '<h5>' + instement[i].name + '</h5>')
+          $("#buttonimage").append('<div id ="carte" style="  width:6%;"><img id="add" style="cursor: pointer; border-radius: 50%"; opacity: 0.5;" onclick="addtochariot(' + 'instement[' + i +'].name'+')" src=' + instement[i].src + ' width="100" height="100">' + '<h5>' + instement[i].name + '</h5></div>')
          }
 
              var myIndex = 0;
